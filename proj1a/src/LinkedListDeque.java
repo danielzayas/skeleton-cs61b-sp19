@@ -1,4 +1,4 @@
-public class LinkedListDeque<T> {
+public class LinkedListDeque<T> implements Deque<T> {
 
     private int size;
     private Node sentinel;
@@ -67,9 +67,5 @@ public class LinkedListDeque<T> {
         }
 
         return (T) p.getValue();
-    }
-
-    public void printDeque() {
-        System.out.println("printDeque is not implemented");
     }
 }
