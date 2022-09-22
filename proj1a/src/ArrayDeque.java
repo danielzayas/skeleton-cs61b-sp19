@@ -59,11 +59,12 @@ public class ArrayDeque<T> implements Deque<T>{
     @Override
     public T removeFirst() {
         updatePrevI(1); // Now points to the value to remove.
+        T value = values[prevI];
         size -= 1;
 
         resizeIfNeeded();
 
-        return values[prevI];
+        return value;
     }
 
     /**
@@ -74,11 +75,12 @@ public class ArrayDeque<T> implements Deque<T>{
     @Override
     public T removeLast() {
         updateNextI(-1);
+        T value = values[nextI];
         size -= 1;
 
         resizeIfNeeded();
 
-        return values[nextI];
+        return value;
     }
 
     /**

@@ -10,9 +10,13 @@ public class LinkedListDeque<T> implements Deque<T> {
         this.sentinel.setNext(this.sentinel);
     }
 
+    @Override
     public int size() {return this.size;}
+
+    @Override
     public boolean isEmpty() {return this.size == 0;}
 
+    @Override
     public void addLast(T value) {
         Node last = this.sentinel.getPrev();
         Node node = new Node.NodeBuilder(value).build();
@@ -21,6 +25,8 @@ public class LinkedListDeque<T> implements Deque<T> {
         node.setPrev(last);
         this.size += 1;
     }
+
+    @Override
     public void addFirst(T value) {
         Node first = this.sentinel.getNext();
         Node node = new Node.NodeBuilder(value).build();
@@ -31,6 +37,7 @@ public class LinkedListDeque<T> implements Deque<T> {
         this.size += 1;
     }
 
+    @Override
     public T removeFirst() {
         if (isEmpty()) {return null;}
 
@@ -43,6 +50,7 @@ public class LinkedListDeque<T> implements Deque<T> {
         return first;
     }
 
+    @Override
     public T removeLast() {
         if (isEmpty()) {return null;}
 
@@ -55,6 +63,7 @@ public class LinkedListDeque<T> implements Deque<T> {
         return last;
     }
 
+    @Override
     public T get(int i) {
         if (i < 0 || this.size() <= i) {
             System.out.printf("Index %d out of bounds", this.size());
