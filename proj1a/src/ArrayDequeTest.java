@@ -65,4 +65,21 @@ public class ArrayDequeTest {
             Assert.assertEquals(Integer.valueOf(y), d.removeFirst());
         }
     }
+
+    @Test
+    public void TestIterable() {
+        ArrayDeque<Integer> d = new ArrayDeque<>();
+
+        for (int x : range(0, 9)) {
+            d.addLast(x);
+        }
+
+        Integer i = Integer.valueOf(0);
+        for (Object x : d) {
+            Integer y = (Integer) x;
+            Assert.assertEquals(i, y);
+            i += 1;
+        }
+
+    }
 }

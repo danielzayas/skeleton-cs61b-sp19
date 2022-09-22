@@ -1,4 +1,9 @@
-public class ArrayDeque<T> implements Deque<T>{
+import java.util.Arrays;
+import java.util.Iterator;
+
+import static org.apache.commons.math3.util.IntegerSequence.range;
+
+public class ArrayDeque<T> implements Deque<T>, Iterable{
     /**
      Double-ended queue implementation that uses arrays to store values.
 
@@ -106,6 +111,14 @@ public class ArrayDeque<T> implements Deque<T>{
         return size;
     }
 
+    /**
+     * @return
+     */
+    @Override
+    public Iterator<T> iterator() {
+        return Deque.super.iterator();
+    }
+
     /* Only resize values array if needed, otherwise no-op */
     private void resizeIfNeeded() {
         double factor = getResizeFactor();
@@ -198,7 +211,6 @@ public class ArrayDeque<T> implements Deque<T>{
             int remainder = candidateIndex % values.length;
             return values.length + remainder;
         } else if (values.length <= candidateIndex) {
-            assert candidateIndex == values.length; // TODO: delete
             int remainder = candidateIndex % values.length;
             return remainder;
         } else {

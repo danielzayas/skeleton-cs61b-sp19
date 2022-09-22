@@ -1,4 +1,4 @@
-public class LinkedListDeque<T> implements Deque<T> {
+public class LinkedListDeque<T> extends BaseDeque<T> implements Deque<T>, Iterable {
 
     private int size;
     private Node sentinel;
