@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ac252cdd-83d3-4cae-beaf-06963f510bd1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../proj1b/src/Palindrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj1b/src/Deque.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj1b/src/TestPalindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/../proj1b/src/TestPalindrome.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Erm4ZMFm4EEuBwyh32qRfejMIF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "OverrideImplement.generate.javadoc": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "adopt-11",
+    "last_opened_file_path": "/Users/danielzayas/education/skeleton-cs61b-sp19/proj1a",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
+  }
+}]]></component>
+  <component name="RunManager" selected="JUnit.ArrayDequeTest.TestIterable">
+    <configuration name="LinkedListDequeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LinkedListDequeTest" />
+      <module name="proj1a" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArrayDequeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proj1a" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ArrayDequeTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArrayDequeTest.TestAddLastResize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proj1a" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ArrayDequeTest" />
+      <option name="METHOD_NAME" value="TestAddLastResize" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArrayDequeTest.TestIterable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proj1a" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ArrayDequeTest" />
+      <option name="METHOD_NAME" value="TestIterable" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LinkedListDequeTest.TestIterable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proj1a" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LinkedListDequeTest" />
+      <option name="METHOD_NAME" value="TestIterable" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.LinkedListDequeTest" />
+      <item itemvalue="JUnit.ArrayDequeTest.TestAddLastResize" />
+      <item itemvalue="JUnit.ArrayDequeTest.TestIterable" />
+      <item itemvalue="JUnit.LinkedListDequeTest.TestIterable" />
+      <item itemvalue="JUnit.ArrayDequeTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ArrayDequeTest.TestIterable" />
+        <item itemvalue="JUnit.LinkedListDequeTest.TestIterable" />
+        <item itemvalue="Application.LinkedListDequeTest" />
+        <item itemvalue="JUnit.ArrayDequeTest" />
+        <item itemvalue="JUnit.ArrayDequeTest.TestAddLastResize" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ac252cdd-83d3-4cae-beaf-06963f510bd1" name="Changes" comment="" />
+      <created>1663361886155</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1663361886155</updated>
+      <workItem from="1663361887214" duration="15590000" />
+      <workItem from="1663721417214" duration="82000" />
+      <workItem from="1663721505677" duration="213000" />
+      <workItem from="1663721755597" duration="54000" />
+      <workItem from="1663721852628" duration="17729000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ArrayDeque.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ArrayDequeTest.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ArrayDequeTest.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <condition expression="y &gt;= 5" language="JAVA" />
+          <url>file://$PROJECT_DIR$/src/ArrayDequeTest.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ArrayDeque.java</url>
+          <line>102</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ArrayDequeTest.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ArrayDeque.java</url>
+          <line>118</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

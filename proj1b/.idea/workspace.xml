@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9848a960-edcc-47c4-8e96-ef694d7baf25" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/OffByN.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/OffByOne.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Palindrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj1a/proj1a.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj1a/src/ArrayDeque.java" beforeDir="false" afterPath="$PROJECT_DIR$/../proj1a/src/ArrayDeque.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj1a/src/Deque.java" beforeDir="false" afterPath="$PROJECT_DIR$/../proj1a/src/Deque.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Deque.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PalindromeFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PalindromeFinder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TestOffByOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestOffByOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TestPalindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestPalindrome.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2F6PEiRkUb4CVuFVAaSm4ksGgQO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "adopt-11",
+    "last_opened_file_path": "/Users/danielzayas/education/skeleton-cs61b-sp19/proj1b",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.PalindromeFinder">
+    <configuration name="PalindromeFinder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PalindromeFinder" />
+      <module name="proj1b" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestOffByOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proj1b" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestOffByOne" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestOffByOne.testOffByOneEqualChars" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proj1b" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestOffByOne" />
+      <option name="METHOD_NAME" value="testOffByOneEqualChars" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestPalindrome (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proj1b" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestPalindrome" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestPalindrome" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proj1.proj1b" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestPalindrome" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="proj1.proj1b" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="proj1.proj1b" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.PalindromeFinder" />
+        <item itemvalue="JUnit.TestOffByOne.testOffByOneEqualChars" />
+        <item itemvalue="JUnit.TestOffByOne" />
+        <item itemvalue="JUnit.TestPalindrome (1)" />
+        <item itemvalue="JUnit.TestPalindrome" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9848a960-edcc-47c4-8e96-ef694d7baf25" name="Changes" comment="" />
+      <created>1663809450172</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1663809450172</updated>
+      <workItem from="1663809451275" duration="11214000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

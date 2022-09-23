@@ -22,6 +22,12 @@ public interface Deque<T> {
         System.out.println("printDeque is not implemented");
     }
 
+    /**
+     @return an Iterator of the values in the Deque.
+     @implSpec JUses the size() and get() methods to
+     construct an array of values. If get() takes linear time,
+     then constructing the array will take quadratic time.
+     */
     default Iterator<T> iterator() {
         int n = size();
         T[] values = (T[]) new Object[n];

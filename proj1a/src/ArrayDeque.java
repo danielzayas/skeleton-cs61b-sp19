@@ -1,5 +1,6 @@
 import java.util.Arrays;
 import java.util.Iterator;
+import java.util.Objects;
 
 import static org.apache.commons.math3.util.IntegerSequence.range;
 
@@ -29,6 +30,17 @@ public class ArrayDeque<T> implements Deque<T>, Iterable{
     private int size = 0; // number of values in the deque
 
     public ArrayDeque() {}
+
+    /* Utility for building an instance from a string */
+    public static ArrayDeque<Character> fromString(String s) {
+        ArrayDeque<Character> d = new ArrayDeque<>();
+
+        for (char c : s.toCharArray()) {
+            d.addLast(c);
+        }
+
+        return d;
+    }
 
     /**
      * Add a value to the front of the deque.
