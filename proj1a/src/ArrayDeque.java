@@ -1,4 +1,10 @@
-public class ArrayDeque<T> implements Deque<T>{
+import java.util.Arrays;
+import java.util.Iterator;
+import java.util.Objects;
+
+import static org.apache.commons.math3.util.IntegerSequence.range;
+
+public class ArrayDeque<T> implements Deque<T>, Iterable{
     /**
      Double-ended queue implementation that uses arrays to store values.
 
@@ -24,6 +30,17 @@ public class ArrayDeque<T> implements Deque<T>{
     private int size = 0; // number of values in the deque
 
     public ArrayDeque() {}
+
+    /* Utility for building an instance from a string */
+    public static ArrayDeque<Character> fromString(String s) {
+        ArrayDeque<Character> d = new ArrayDeque<>();
+
+        for (char c : s.toCharArray()) {
+            d.addLast(c);
+        }
+
+        return d;
+    }
 
     /**
      * Add a value to the front of the deque.
@@ -59,11 +76,12 @@ public class ArrayDeque<T> implements Deque<T>{
     @Override
     public T removeFirst() {
         updatePrevI(1); // Now points to the value to remove.
+        T value = values[prevI];
         size -= 1;
 
         resizeIfNeeded();
 
-        return values[prevI];
+        return value;
     }
 
     /**
@@ -74,11 +92,12 @@ public class ArrayDeque<T> implements Deque<T>{
     @Override
     public T removeLast() {
         updateNextI(-1);
+        T value = values[nextI];
         size -= 1;
 
         resizeIfNeeded();
 
-        return values[nextI];
+        return value;
     }
 
     /**
@@ -102,6 +121,14 @@ public class ArrayDeque<T> implements Deque<T>{
     @Override
     public int size() {
         return size;
+    }
+
+    /**
+     * @return
+     */
+    @Override
+    public Iterator<T> iterator() {
+        return Deque.super.iterator();
     }
 
     /* Only resize values array if needed, otherwise no-op */
@@ -196,7 +223,6 @@ public class ArrayDeque<T> implements Deque<T>{
             int remainder = candidateIndex % values.length;
             return values.length + remainder;
         } else if (values.length <= candidateIndex) {
-            assert candidateIndex == values.length; // TODO: delete
             int remainder = candidateIndex % values.length;
             return remainder;
         } else {

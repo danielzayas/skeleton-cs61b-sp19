@@ -1,3 +1,8 @@
+import org.junit.Assert;
+import org.junit.Test;
+
+import static org.apache.commons.math3.util.IntegerSequence.range;
+
 /** Performs some basic linked list tests. */
 public class LinkedListDequeTest {
 	
@@ -87,5 +92,22 @@ public class LinkedListDequeTest {
 		System.out.println("Running tests.\n");
 		addIsEmptySizeTest();
 		addRemoveTest();
+	}
+
+	@Test
+	public void TestIterable() {
+		LinkedListDeque<Integer> d = new LinkedListDeque<>();
+
+		for (int x : range(0, 9)) {
+			d.addLast(x);
+		}
+
+		Integer i = Integer.valueOf(0);
+		for (Object x : d) {
+			Integer y = (Integer) x;
+			Assert.assertEquals(i, y);
+			i += 1;
+		}
+
 	}
 } 
