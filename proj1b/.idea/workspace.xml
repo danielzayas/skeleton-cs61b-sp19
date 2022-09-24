@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9848a960-edcc-47c4-8e96-ef694d7baf25" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/OffByN.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/OffByOne.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Palindrome.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj1a/proj1a.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj1a/src/ArrayDeque.java" beforeDir="false" afterPath="$PROJECT_DIR$/../proj1a/src/ArrayDeque.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj1a/src/Deque.java" beforeDir="false" afterPath="$PROJECT_DIR$/../proj1a/src/Deque.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Deque.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PalindromeFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PalindromeFinder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TestOffByOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestOffByOne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TestPalindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestPalindrome.java" afterDir="false" />
-    </list>
+    <list default="true" id="9848a960-edcc-47c4-8e96-ef694d7baf25" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -138,7 +127,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663809450172</updated>
-      <workItem from="1663809451275" duration="11214000" />
+      <workItem from="1663809451275" duration="11651000" />
     </task>
     <servers />
   </component>
