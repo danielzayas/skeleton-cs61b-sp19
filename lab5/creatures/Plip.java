@@ -1,14 +1,15 @@
 package creatures;
 
-import huglife.Creature;
-import huglife.Direction;
-import huglife.Action;
-import huglife.Occupant;
+import huglife.*;
 
+import javax.print.attribute.standard.MediaSize;
 import java.awt.Color;
 import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.Map;
+import java.util.Objects;
+
+import static huglife.HugLifeUtils.randomEntry;
 
 /**
  * An implementation of a motile pacifist photosynthesizer.
@@ -16,6 +17,10 @@ import java.util.Map;
  * @author Josh Hug
  */
 public class Plip extends Creature {
+    protected static final String NAME = "plip";
+    private static final double maxEnergy = 2.0;
+    private static final double moveEnergy = 0.15;
+    private static final double stayEnergy = 0.2;
 
     /**
      * red color.
@@ -34,10 +39,10 @@ public class Plip extends Creature {
      * creates plip with energy equal to E.
      */
     public Plip(double e) {
-        super("plip");
-        r = 0;
-        g = 0;
-        b = 0;
+        super(NAME);
+        r = 99;
+        // g undefined. See color().
+        b = 76;
         energy = e;
     }
 
@@ -57,7 +62,7 @@ public class Plip extends Creature {
      * that you get this exactly correct.
      */
     public Color color() {
-        g = 63;
+        g = (int) Math.round(63 + (energy / maxEnergy * (255 - 63)));
         return color(r, g, b);
     }
 
@@ -74,7 +79,8 @@ public class Plip extends Creature {
      * private static final variable. This is not required for this lab.
      */
     public void move() {
-        // TODO
+        energy -= moveEnergy;
+        energy = Math.max(0, energy);
     }
 
 
@@ -82,7 +88,8 @@ public class Plip extends Creature {
      * Plips gain 0.2 energy when staying due to photosynthesis.
      */
     public void stay() {
-        // TODO
+        energy += stayEnergy;
+        energy = Math.min(maxEnergy, energy);
     }
 
     /**
@@ -91,7 +98,10 @@ public class Plip extends Creature {
      * Plip.
      */
     public Plip replicate() {
-        return this;
+        double postReplicateEnergy = energy / 2.0;
+        energy = postReplicateEnergy;
+
+        return new Plip(postReplicateEnergy);
     }
 
     /**
@@ -114,15 +124,34 @@ public class Plip extends Creature {
         // TODO
         // (Google: Enhanced for-loop over keys of NEIGHBORS?)
         // for () {...}
+        for (Map.Entry<Direction, Occupant> entry : neighbors.entrySet()) {
+            String occupantName = entry.getValue().name();
 
-        if (false) { // FIXME
-            // TODO
+            if (Objects.equals(occupantName, "empty")) {
+                // TODO: Occupant implements Comparable?
+                emptyNeighbors.addLast(entry.getKey());
+            } else if (Objects.equals(occupantName, "clorus")) {
+                anyClorus = true;
+            }
+        }
+
+        if (emptyNeighbors.isEmpty()) { // FIXME
+            return new Action(Action.ActionType.STAY);
         }
 
         // Rule 2
         // HINT: randomEntry(emptyNeighbors)
+        if (energy >= 1) {
+            Direction direction = (Direction) randomEntry(emptyNeighbors);
+            return new Action(Action.ActionType.REPLICATE, direction);
+        }
 
         // Rule 3
+        boolean isMove = Math.random() < 0.5;
+        if (anyClorus && isMove) {
+            Direction direction = (Direction) randomEntry(emptyNeighbors);
+            return new Action(Action.ActionType.MOVE, direction);
+        }
 
         // Rule 4
         return new Action(Action.ActionType.STAY);

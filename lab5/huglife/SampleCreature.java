@@ -37,11 +37,11 @@ public class SampleCreature extends Creature {
     /**
      * probability of taking a move when ample space available.
      */
-    private double moveProbability = 0.2;
+    private double moveProbability = 0.1;
     /**
      * degree of color shift to allow.
      */
-    private int colorShift = 5;
+    private int colorShift = 50;
     /**
      * fraction of energy to retain when replicating.
      */
@@ -101,6 +101,14 @@ public class SampleCreature extends Creature {
         r += HugLifeUtils.randomInt(-colorShift, colorShift);
         r = Math.min(r, 255);
         r = Math.max(r, 0);
+
+        g += HugLifeUtils.randomInt(-colorShift, colorShift);
+        g = Math.min(g, 255);
+        g = Math.max(g, 0);
+
+        b += HugLifeUtils.randomInt(-colorShift, colorShift);
+        b = Math.min(b, 255);
+        b = Math.max(b, 0);
     }
 
     /**

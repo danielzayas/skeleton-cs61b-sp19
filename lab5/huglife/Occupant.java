@@ -8,7 +8,7 @@ import java.awt.Color;
  * Intended for extension by:
  * Creature, Empty, and Impassible only.
  */
-public abstract class Occupant {
+public abstract class Occupant extends Object {
     /**
      * Name for this type of Occupant.
      */
