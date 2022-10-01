@@ -56,4 +56,8 @@ public abstract class Creature extends Occupant {
     public double energy() {
         return energy;
     }
+
+    public void setEnergy(double e) {
+        energy = e;
+    }
 }

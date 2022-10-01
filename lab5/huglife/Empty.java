@@ -3,8 +3,10 @@ package huglife;
 import java.awt.Color;
 
 public class Empty extends Occupant {
+    public static String NAME = "empty";
+
     public Empty() {
-        super("empty");
+        super(NAME);
     }
 
     /**

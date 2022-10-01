@@ -7,11 +7,10 @@ package huglife;
 
 import java.util.Deque;
 import java.util.Random;
-import java.util.List;
 import java.util.Stack;
 
 
-public class HugLifeUtils {
+public class HugLifeUtils<T> {
     private static Random r = null;
 
     /** Returns a random number uniformly between 0 and 1 */
@@ -37,20 +36,20 @@ public class HugLifeUtils {
     }
 
     /** Returns a random Direction uniformly chosen from L */
-    public static Direction randomEntry(Deque<Direction> L) {
+    public static Object randomEntry(Deque L) {
         // In Sp19 we use a Deque instead of a List because students haven't seen types of Lists yet.
 
         // Choose an index.
         int dirIndex = randomInt(L.size() - 1);
 
         // Take the first dirIndex items off the Deque and stash them in popped.
-        Stack<Direction> popped = new Stack<>();
+        Stack<Object> popped = new Stack<>();
         for (int i = 0; i < dirIndex; i++) {
             popped.push(L.removeFirst());
         }
 
         // Grab the desired item.
-        Direction result = L.peekFirst();
+        Object result = L.peekFirst();
 
         // Put everything back into the Deque before returning.
         for (int i = 0; i < dirIndex; i++) {

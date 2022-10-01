@@ -32,10 +32,18 @@ public class TestPlip {
 
     @Test
     public void testReplicate() {
-        // TODO
+        double initEnergy = 2.0;
+        Plip p = new Plip(initEnergy);
+        Plip newP = p.replicate();
+
+        assertNotSame(p, newP);  // should be different addresses for different objects
+
+        double expectedEnergy = initEnergy / 2.0;
+        assertEquals(expectedEnergy, p.energy(), 0.01);
+        assertEquals(expectedEnergy, newP.energy(), 0.01);
     }
 
-    //@Test
+    @Test
     public void testChoose() {
 
         // No empty adjacent spaces; stay.
